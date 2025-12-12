@@ -409,6 +409,98 @@ nav a:hover {
 }
 
 .modal-price {
+
+  img,
+  picture,
+  video,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Mobile / small tablets */
+  @media (max-width: 768px) {
+    header {
+      padding: 1rem 1.25rem;
+      position: fixed;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(4px);
+    }
+
+    nav ul {
+      gap: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      height: auto;
+      padding: 6rem 1rem 2rem;
+      margin-top: 4rem;
+    }
+
+    .main-image {
+      position: relative;
+      height: auto;
+      object-fit: cover;
+      max-height: 50vh;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+    }
+
+    .perfume-grid {
+      flex-direction: column;
+      gap: 1.25rem;
+      min-height: auto;
+      padding: 1rem;
+    }
+
+    .perfume-card img {
+      width: 180px;
+      height: auto;
+    }
+
+    .perfume-info {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .categories {
+      padding: 3rem 1rem;
+    }
+
+    .category-grid {
+      grid-template-columns: 1fr;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .modal-body {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+    }
+  }
+
+  /* Extra small devices */
+  @media (max-width: 420px) {
+    .hero-text h1 {
+      font-size: 1.5rem;
+    }
+
+    .hero-text p {
+      font-size: 0.95rem;
+    }
+
+    nav ul {
+      gap: 0.6rem;
+    }
+  }
+
   font-size: 2rem;
   font-weight: bold;
   color: #d4a574;
